@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Rotator App</title>
+    <meta charset='utf-8'>
+
+    <link href="../../css/rotator-app.css" media="all" rel="stylesheet" type="text/css">
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" media="all" rel="stylesheet" type="text/css">
+
+    <style>
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.wrapper {
+  width: 944px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+}
+
+.wrapper h1 {
+  margin: 0px 20px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.wrapper hr {
+  height: 1px;
+  margin: 20px 0px;
+  padding: 0px;
+  border: none;
+  background: #d5d5d5;
+}
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="../../js/rotator.js"></script>
+    <script src="../../js/rotator-app.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var rotator_app = new RotatorApp({
+          container: $('#container'),
+          toolbar: $('#toolbar'),
+
+          src: '../lenna.jpg',
+          angle: 45,
+
+          grid: {
+            visibility: true,
+            width: 1,
+            color: '#5aa',
+            step: 40
+          },
+
+          change: function (rotator) {
+            console.log(rotator.angle);
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Rotator App</h1>
+      <hr>
+      <div id="toolbar"></div>
+      <div id="container"></div>
+    </div>
+  </body>
+</html>
+
