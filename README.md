@@ -73,5 +73,5 @@ $(document).ready(function () {
 
 ![screen](https://raw.github.com/speranskydanil/rotator-js/master/app-1.png)
 
-![screen](https://raw.github.com/speranskydanil/rotator-js/master/app-1.png)
+![screen](https://raw.github.com/speranskydanil/rotator-js/master/app-2.png)
 
