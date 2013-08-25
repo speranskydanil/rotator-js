@@ -128,16 +128,19 @@ var Rotator = (function () {
 
       this.ctx.beginPath();
 
-      for (var offset = 0; offset <= this.size / 2; offset += this.grid.step)
+      var half = Math.round(this.size / 2);
+      var fix = this.grid.width % 2 == 0 ? 0 : 0.5;
+
+      for (var offset = 0; offset <= half; offset += this.grid.step)
       {
-        var offsets = [-offset, offset];
+        var offsets = offset == 0 ? [offset] : [-offset, offset];
 
         for (i in offsets) {
           if (offsets.hasOwnProperty(i)) {
-            this.ctx.moveTo(this.size / 2 + offsets[i], 0);
-            this.ctx.lineTo(this.size / 2 + offsets[i], this.size);
-            this.ctx.moveTo(0, this.size / 2 + offsets[i]);
-            this.ctx.lineTo(this.size, this.size / 2 + offsets[i]);
+            this.ctx.moveTo(half + offsets[i] + fix, 0);
+            this.ctx.lineTo(half + offsets[i] + fix, this.size);
+            this.ctx.moveTo(0, half + offsets[i] + fix);
+            this.ctx.lineTo(this.size, half + offsets[i] + fix);
           }
         }
       }
