@@ -55,7 +55,10 @@ var Rotator = (function () {
           width: 1,
           color: '#5aa',
           step: 40
-        }
+        },
+
+        load: function () {},
+        change: function () {}
       };
 
       config = {};
@@ -87,6 +90,7 @@ var Rotator = (function () {
       this.canvas.style.right = '0px';
       this.canvas.style.cursor = 'crosshair';
 
+      this.load(this);
       this.rotate(this.angle);
     },
 

@@ -22,8 +22,12 @@ var rotator = new Rotator({
     step: 40
   },
 
+  load: function (rotator) {
+    console.log('load ' + rotator.angle)
+  },
+
   change: function (rotator) {
-    console.log(rotator.angle);
+    console.log('change ' + rotator.angle);
   }
 });
 ```
@@ -64,8 +68,12 @@ $(document).ready(function () {
       step: 40
     },
 
+    load: function (rotator) {
+      console.log('load ' + rotator.angle)
+    },
+
     change: function (rotator) {
-      console.log(rotator.angle);
+      console.log('change ' + rotator.angle);
     }
   });
 });
