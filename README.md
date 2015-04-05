@@ -5,11 +5,11 @@ It consists of two parts: core and app.
 
 ## Core
 
-```
+```html
 <script src="../../js/rotator.js"></script>
 ```
 
-```
+```javascript
 var rotator = new Rotator({
   container: document.getElementById('container'),
   src: '../lenna.jpg',
@@ -30,9 +30,7 @@ var rotator = new Rotator({
     console.log('change ' + rotator.angle);
   }
 });
-```
 
-```
 rotator.rotate(15);
 ```
 
@@ -40,19 +38,17 @@ rotator.rotate(15);
 
 ## App
 
-```
+```html
 <link href="../../css/rotator-app.css" media="all" rel="stylesheet" type="text/css">
 <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" media="all" rel="stylesheet" type="text/css">
-```
 
-```
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <script src="../../js/rotator.js"></script>
 <script src="../../js/rotator-app.js"></script>
 ```
 
-```
+```javascript
 $(document).ready(function () {
   var rotator_app = new RotatorApp({
     container: $('#container'),
