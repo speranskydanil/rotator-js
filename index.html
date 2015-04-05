@@ -28,74 +28,68 @@ It consists of two parts: core and app.</p>
 <h2>
 <a id="core" class="anchor" href="#core" aria-hidden="true"><span class="octicon octicon-link"></span></a>Core</h2>
 
-<pre><code>&lt;script src="../../js/rotator.js"&gt;&lt;/script&gt;
-</code></pre>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
-<pre><code>var rotator = new Rotator({
-  container: document.getElementById('container'),
-  src: '../lenna.jpg',
-  angle: 45,
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> rotator <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Rotator</span>({
+  container<span class="pl-k">:</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>container<span class="pl-pds">'</span></span>),
+  src<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>../lenna.jpg<span class="pl-pds">'</span></span>,
+  angle<span class="pl-k">:</span> <span class="pl-c1">45</span>,
 
-  grid: {
-    visibility: true,
-    width: 1,
-    color: '#5aa',
-    step: 40
+  grid<span class="pl-k">:</span> {
+    visibility<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+    width<span class="pl-k">:</span> <span class="pl-c1">1</span>,
+    color<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#5aa<span class="pl-pds">'</span></span>,
+    step<span class="pl-k">:</span> <span class="pl-c1">40</span>
   },
 
-  load: function (rotator) {
-    console.log('load ' + rotator.angle)
+  <span class="pl-en">load</span>: <span class="pl-k">function</span> (<span class="pl-smi">rotator</span>) {
+    <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-s"><span class="pl-pds">'</span>load <span class="pl-pds">'</span></span> <span class="pl-k">+</span> rotator.angle)
   },
 
-  change: function (rotator) {
-    console.log('change ' + rotator.angle);
+  <span class="pl-en">change</span>: <span class="pl-k">function</span> (<span class="pl-smi">rotator</span>) {
+    <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-s"><span class="pl-pds">'</span>change <span class="pl-pds">'</span></span> <span class="pl-k">+</span> rotator.angle);
   }
 });
-</code></pre>
 
-<pre><code>rotator.rotate(15);
-</code></pre>
+rotator.rotate(<span class="pl-c1">15</span>);</pre></div>
 
 <p><img src="https://raw.github.com/speranskydanil/rotator-js/master/core.png" alt="screen"></p>
 
 <h2>
 <a id="app" class="anchor" href="#app" aria-hidden="true"><span class="octicon octicon-link"></span></a>App</h2>
 
-<pre><code>&lt;link href="../../css/rotator-app.css" media="all" rel="stylesheet" type="text/css"&gt;
-&lt;link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" media="all" rel="stylesheet" type="text/css"&gt;
-</code></pre>
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../css/rotator-app.css<span class="pl-pds">"</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">"</span>all<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css<span class="pl-pds">"</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">"</span>all<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
 
-<pre><code>&lt;script src="http://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;
-&lt;script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"&gt;&lt;/script&gt;
-&lt;script src="../../js/rotator.js"&gt;&lt;/script&gt;
-&lt;script src="../../js/rotator-app.js"&gt;&lt;/script&gt;
-</code></pre>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/jquery-1.10.2.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/ui/1.10.2/jquery-ui.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator-app.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
-<pre><code>$(document).ready(function () {
-  var rotator_app = new RotatorApp({
-    container: $('#container'),
-    toolbar: $('#toolbar'),
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span> () {
+  <span class="pl-k">var</span> rotator_app <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">RotatorApp</span>({
+    container<span class="pl-k">:</span> $(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>),
+    toolbar<span class="pl-k">:</span> $(<span class="pl-s"><span class="pl-pds">'</span>#toolbar<span class="pl-pds">'</span></span>),
 
-    src: '../lenna.jpg',
-    angle: 45,
+    src<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>../lenna.jpg<span class="pl-pds">'</span></span>,
+    angle<span class="pl-k">:</span> <span class="pl-c1">45</span>,
 
-    grid: {
-      visibility: true,
-      width: 1,
-      color: '#5aa',
-      step: 40
+    grid<span class="pl-k">:</span> {
+      visibility<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+      width<span class="pl-k">:</span> <span class="pl-c1">1</span>,
+      color<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>#5aa<span class="pl-pds">'</span></span>,
+      step<span class="pl-k">:</span> <span class="pl-c1">40</span>
     },
 
-    load: function (rotator) {
-      console.log('load ' + rotator.angle)
+    <span class="pl-en">load</span>: <span class="pl-k">function</span> (<span class="pl-smi">rotator</span>) {
+      <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-s"><span class="pl-pds">'</span>load <span class="pl-pds">'</span></span> <span class="pl-k">+</span> rotator.angle)
     },
 
-    change: function (rotator) {
-      console.log('change ' + rotator.angle);
+    <span class="pl-en">change</span>: <span class="pl-k">function</span> (<span class="pl-smi">rotator</span>) {
+      <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-s"><span class="pl-pds">'</span>change <span class="pl-pds">'</span></span> <span class="pl-k">+</span> rotator.angle);
     }
   });
-});
-</code></pre>
+});</pre></div>
 
 <p><img src="https://raw.github.com/speranskydanil/rotator-js/master/app-1.png" alt="screen"></p>
 
