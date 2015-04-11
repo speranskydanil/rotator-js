@@ -1,0 +1,33 @@
+{
+  "name": "rotator-js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/speranskydanil/rotator-js",
+  "authors": [
+    "Speransky Danil <speranskydanil@gmail.com>"
+  ],
+  "license": "MIT",
+  "description": "rotator-js is a JavaScript library which uses canvas for rotating of images",
+  "main": [
+    "css/rotator-app.css",
+    "js/rotator.js",
+    "js/rotator-app.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.11.2",
+    "jquery-ui": ">=1.11.2"
+  },
+  "keywords": [
+    "rotate",
+    "rotating",
+    "canvas",
+    "image",
+    "angle"
+  ]
+}
