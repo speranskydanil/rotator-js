@@ -5,13 +5,15 @@ It consists of two parts: core and app.
 
 ## Core
 
+### <a href="http://speranskydanil.github.io/rotator-js/demo/rotator/index.html">DEMO</a>
+
 ```html
 <script src="../../js/rotator.js"></script>
 ```
 
 ```javascript
 var rotator = new Rotator({
-  container: document.getElementById('container'),
+  container: document.getElementById('rotator'),
   src: '../lenna.jpg',
   angle: 45,
 
@@ -38,12 +40,14 @@ rotator.rotate(15);
 
 ## App
 
-```html
-<link href="../../css/rotator-app.css" media="all" rel="stylesheet" type="text/css">
-<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" media="all" rel="stylesheet" type="text/css">
+### <a href="http://speranskydanil.github.io/rotator-js/demo/rotator-app/index.html">DEMO</a>
 
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+```html
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="../../css/rotator-app.css">
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
 <script src="../../js/rotator.js"></script>
 <script src="../../js/rotator-app.js"></script>
 ```
@@ -51,7 +55,7 @@ rotator.rotate(15);
 ```javascript
 $(document).ready(function () {
   var rotator_app = new RotatorApp({
-    container: $('#container'),
+    container: $('#rotator-app'),
     toolbar: $('#toolbar'),
 
     src: '../lenna.jpg',
