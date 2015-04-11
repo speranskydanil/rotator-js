@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Rotator</title>
+    <meta charset='utf-8'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <style>
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.header {
+  padding: 20px;
+  background: #005500;
+  background-image: url(assets/bg.png);
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: #efe;
+  background-image: url(assets/bg.png);
+  text-align: center;
+}
+
+.container {
+  padding: 20px 0px 82px 0px;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">Rotator</div>
+
+      <div class="container">
+        <div id="rotator"></div>
+      </div>
+
+      <div class='footer'>
+        <strong>Author (Speransky Danil):</strong>
+        <a href="http://dsperansky.info">Personal Page</a> /
+        <a href="http://ru.linkedin.com/in/speranskydanil/en">LinkedIn</a> /
+        <a href="https://github.com/speranskydanil?tab=repositories">GitHub</a> /
+        <a href="http://stackoverflow.com/users/1550807/speransky-danil">StackOverflow</a>
+      </div>
+    </div>
+
+    <script src="../../js/rotator.js"></script>
+
+    <script>
+var rotator = new Rotator({
+  container: document.getElementById('rotator'),
+  src: '../lenna.jpg',
+  angle: 45,
+
+  grid: {
+    visibility: true,
+    width: 1,
+    color: '#5aa',
+    step: 40
+  },
+
+  load: function (rotator) {
+    console.log('load ' + rotator.angle)
+  },
+
+  change: function (rotator) {
+    console.log('change ' + rotator.angle);
+  }
+});
+    </script>
+  </body>
+</html>
+
