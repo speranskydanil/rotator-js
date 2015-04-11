@@ -28,10 +28,14 @@ It consists of two parts: core and app.</p>
 <h2>
 <a id="core" class="anchor" href="#core" aria-hidden="true"><span class="octicon octicon-link"></span></a>Core</h2>
 
+<h3>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://speranskydanil.github.io/rotator-js/demo/rotator/index.html">DEMO</a>
+</h3>
+
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> rotator <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Rotator</span>({
-  container<span class="pl-k">:</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>container<span class="pl-pds">'</span></span>),
+  container<span class="pl-k">:</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>rotator<span class="pl-pds">'</span></span>),
   src<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>../lenna.jpg<span class="pl-pds">'</span></span>,
   angle<span class="pl-k">:</span> <span class="pl-c1">45</span>,
 
@@ -58,17 +62,21 @@ rotator.rotate(<span class="pl-c1">15</span>);</pre></div>
 <h2>
 <a id="app" class="anchor" href="#app" aria-hidden="true"><span class="octicon octicon-link"></span></a>App</h2>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../css/rotator-app.css<span class="pl-pds">"</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">"</span>all<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
-&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css<span class="pl-pds">"</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">"</span>all<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span>&gt;
+<h3>
+<a id="demo-1" class="anchor" href="#demo-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://speranskydanil.github.io/rotator-js/demo/rotator-app/index.html">DEMO</a>
+</h3>
 
-&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/jquery-1.10.2.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
-&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://code.jquery.com/ui/1.10.2/jquery-ui.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../css/rotator-app.css<span class="pl-pds">"</span></span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://code.jquery.com/jquery-1.11.2.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://code.jquery.com/ui/1.11.3/jquery-ui.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../js/rotator-app.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span> () {
   <span class="pl-k">var</span> rotator_app <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">RotatorApp</span>({
-    container<span class="pl-k">:</span> $(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>),
+    container<span class="pl-k">:</span> $(<span class="pl-s"><span class="pl-pds">'</span>#rotator-app<span class="pl-pds">'</span></span>),
     toolbar<span class="pl-k">:</span> $(<span class="pl-s"><span class="pl-pds">'</span>#toolbar<span class="pl-pds">'</span></span>),
 
     src<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>../lenna.jpg<span class="pl-pds">'</span></span>,
